@@ -1,0 +1,20 @@
+variable "container_name" {
+  description = "Value of the name for the Docker container"
+  # basic types include string, number and bool
+  type        = string
+  default     = "ExampleNginxContainer"
+}
+
+
+variable "external_port" {
+  description = "port external"
+  type = number
+  default = 2224
+}
+
+variable "internal_port" {
+  description = " port internal"
+  type = number
+  default = 80
+}
+
